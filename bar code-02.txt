@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>28 Batteries in Series</title>
+	<style type="text/css">
+		.battery {
+		  width: 20px;
+		  height: 100px;
+		  background-color: #ccc;
+		  position: relative;
+		}
+
+		.level {
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  width: 100%;
+		  background-color: #4caf50;
+		}
+
+		.battery-container {
+		  position: relative;
+		  display: inline-block;
+		  margin-right: 20px;
+		}
+
+		.battery-container:first-child {
+		  margin-left: 0;
+		}
+
+		.battery-container:last-child {
+		  margin-right: 0;
+		}
+
+		.battery-container:not(:first-child) .battery {
+		  margin-top: -20px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="battery-container">
+		<div class="battery">
+		  <div class="level" style="height: 70%;"></div>
+		</div>
+	</div>
+	<!-- Repeat this container and battery code 27 more times -->
+	<div class="battery-container">
+		<div class="battery"> 
+		  <div class="level" style="height: 48%;"></div>
+		</div>
+	</div>
+
+	<div class="battery-container">
+		<div class="battery"> 
+		  <div class="level" style="height: 70%;"></div>
+		</div>
+	</div>
+
+	<div class="battery-container">
+		<div class="battery"> 
+		  <div class="level" style="height: 80%;"></div>
+		</div>
+	</div>
+
+	<div class="battery-container">
+		<div class="battery"> 
+		  <div class="level" style="height: 30%;"></div>
+		</div>
+	</div>
+
+	<div class="battery-container">
+		<div class="battery"> 
+		  <div class="level" style="height: 40%;"></div>
+		</div>
+	</div>
+	<!-- End of repeated code -->
+</body>
+</html>
